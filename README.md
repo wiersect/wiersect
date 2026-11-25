@@ -54,9 +54,9 @@ I work on both sides of security — **breaking assumptions through penetration 
 
 | Quick Links | Details |
 | :--- | :--- |
-| **[Repository](https://github.com/wiersect/wilis)** | Full flat-layout pure-Rust implementation (`core/`, `aead/`, `kem/`, `sign/`, `ratchet/`, `kdf/`, `split/`, `stream/`, `archive/`, `vault/`, `audit/`, `ffi/`) |
-| **[Cryptographic Specification](https://github.com/wiersect/wilis/blob/main/SPECIFICATION.md)** | Complete mathematical spec & binary wire formats (`WILS` v1/v2, `WPKE`, `WKP1`/`WKS1`/`WKC1`, `WSK1`/`WPK1`/`WSIG`, `WRAT`, `WSHR`, `WDIR`, `WVLT`) |
-| **[Security Policy & Audit Log](https://github.com/wiersect/wilis/blob/main/CHANGELOG.md)** | `v0.5.0` multi-recipient PQ streaming + PQ-PCS ratchet, 7 red-team audit rounds (`v0.4.1`–`v0.4.7`), locked KAT vectors & zero external crates |
+| **[Repository](https://github.com/wiersect/wilis)** | Full flat-layout pure-Rust implementation (`core/`, `aead/`, `kem/`, `sign/`, `ratchet/`, `net/`, `protocols/`, `kdf/`, `hash/`, `split/`, `stream/`, `archive/`, `vault/`, `audit/`, `ffi/`) |
+| **[Cryptographic Specification](https://github.com/wiersect/wilis/blob/main/SPECIFICATION.md)** | Complete mathematical spec & binary wire formats (`WILS` v1/v2, `WSEK`, `WPKE` v1/v2, `WPSC`, `WLP1`/`WLSG`, `WHSH`/`WRP2`/`WPRK`/`WRST`, `WNET`, `WDIR` v1/v2, `WVLT`, `WENC`/`WKRN`) |
+| **[Security Policy & Audit Log](https://github.com/wiersect/wilis/blob/main/CHANGELOG.md)** | `v0.6.0` NTT/SIMD acceleration, SIV, stateless `WilisSLH`, `WilisNet` PQ TCP, 6 crypto protocols, Miri UB CI, 8-part audit (`dudect`), 60/60 tests & 0 external crates |
 | **[Prebuilt Binaries](https://github.com/wiersect/wilis/releases)** | Automated native builds & checksums for Linux (`x86_64`), macOS (`ARM64`), and Windows (`x86_64`) |
 
 ---

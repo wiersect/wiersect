@@ -27,14 +27,14 @@
 
 ### Focus & Engineering Principles
 
-I design and audit **self-contained cryptographic software** built from first principles — favoring transparent mathematics, constant-time execution, atomic filesystem safety, and zero third-party supply-chain bloat.
+I work on both sides of security — **breaking assumptions through penetration testing & offensive auditing**, and **developing self-contained systems & cryptographic software** from first principles.
 
-| Area | What I Build & Audit |
+| Area | What I Build & Break |
 | :--- | :--- |
-| **Symmetric Primitives** | Custom sponge permutations (`WilisPerm-384`), ARX + bitsliced nonlinear layers (`Chi-5` / `Feistel-6`), duplex AEAD, keyed sponge MAC, XOF, and hybrid memory-hard KDFs |
-| **Post-Quantum Cryptography** | Constant-time Module-LWE IND-CCA2 KEM (Fujisaki-Okamoto implicit rejection), hybrid public-key containers (`WPKE`), and stateful hash-based `WOTS+` Merkle signatures |
-| **Systems & Memory Safety** | Zero-dependency pure Rust (`std` only), volatile secret zeroization, panic-safe C99 ABI (`libwilis`), Python `ctypes` FFI, and symlink/TOCTOU-safe atomic persistence |
-| **Adversarial Verification** | Locked Known-Answer Test Vectors (KAT), mutation parser fuzzing, live SAC/BIC/DDT/LAT/NIST statistical audits, and multi-OS CI (`-D warnings`, C99 `-Wall -Wextra -Werror`) |
+| **Penetration Testing & Offensive Security** | Security assessments, vulnerability research, attack-surface analysis, white-box code auditing, and adversarial red-team testing |
+| **Software & Systems Development** | Pure Rust (`std` only), C99 ABI (`libwilis`), Python tooling, CLI engineering, atomic crash-safe I/O, and zero supply-chain bloat |
+| **Cryptography Engineering** | Custom sponge permutations (`WilisPerm-384`), duplex AEAD, post-quantum Module-LWE KEM (`IND-CCA2`), `WOTS+` Merkle signatures, forward-secret ratchets & memory-hard KDFs |
+| **Adversarial Verification** | Mutation parser fuzzing, TOCTOU/FFI memory-safety hardening, locked Known-Answer Test Vectors (KAT), live SAC/BIC/DDT/LAT/NIST audits, and multi-OS CI (`-D warnings`) |
 
 ---
 
@@ -67,13 +67,15 @@ I design and audit **self-contained cryptographic software** built from first pr
   <img src="https://img.shields.io/badge/Rust-0f172a?style=flat-square&logo=rust&logoColor=f97316" alt="Rust" />
   <img src="https://img.shields.io/badge/C99%20ABI-0f172a?style=flat-square&logo=c&logoColor=38bdf8" alt="C99" />
   <img src="https://img.shields.io/badge/Python%203-0f172a?style=flat-square&logo=python&logoColor=facc15" alt="Python 3" />
+  <img src="https://img.shields.io/badge/Bash-0f172a?style=flat-square&logo=gnubash&logoColor=4ade80" alt="Bash" />
   <img src="https://img.shields.io/badge/Linux-0f172a?style=flat-square&logo=linux&logoColor=e2e8f0" alt="Linux" />
+  <img src="https://img.shields.io/badge/Pentesting-0f172a?style=flat-square&logo=kalilinux&logoColor=fb7185" alt="Pentesting" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-0f172a?style=flat-square&logo=githubactions&logoColor=60a5fa" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/Git-0f172a?style=flat-square&logo=git&logoColor=fb7185" alt="Git" />
+  <img src="https://img.shields.io/badge/Git-0f172a?style=flat-square&logo=git&logoColor=fb923c" alt="Git" />
 </div>
 
 ---
 
 <div align="center">
-  <sub><code>Built from first principles · Zero external dependencies · Kerckhoffs's Principle</code></sub>
+  <sub><code>Break to understand · Build from first principles · Zero external dependencies</code></sub>
 </div>
